@@ -1,0 +1,92 @@
+<doctype !html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="template.css">
+</head>
+<body>
+	<div class="container"> 
+	<!-- this is a comment. This container contains everything you write-->
+		<div class="page-header">
+			<h1>
+				Form title goes here	
+			</h1>
+			<p class="lead">
+				Explanation goes here.
+			</p>
+		</div>
+
+		<div class="row patient-info">
+			<label class="col-md-8 date" >
+				Date: <%date goes here%>
+			</label>
+
+			<label class="col-md-8 name" >
+				Name: <%name goes here%>
+			</label>
+			<label class="col-md-8 address" >
+				Address: <%address goes here%>
+			</label>
+			<label class="col-md-8 dob" >
+				Date of Birth: <%dob goes here%>
+			</label>
+			<label class="col-md-8 info" >
+				info: <%info goes here%>
+			</label>
+			<label class="col-md-8 info" >
+				info: <%info goes here%>
+			</label>
+			<label class="col-md-8 info" >
+				info: <%info goes here%>
+			</label>
+		</div>
+
+
+		<div class="row col-md-8"> 
+			<!-- questions and everything goes here -->
+
+			<!-- radio buttons question -->
+			<div class="radio question col-md-12">
+				<h3 class="col-md-8">Radio button questions example (question text here)</h3>
+				<!-- for each answer, put the following div in.
+				Keep the <name> value the same, but change <value> to what the
+				text should say  -->
+				<div class="radio answer col-md-12">
+				  <label>
+				    <input type="radio" name="q1" value="option1" checked>
+				    Answer text here
+				  </label>
+				</div>
+
+
+				<div class="radio answer col-md-12">
+				  <label>
+				    <input type="radio" name="q1" value="option2" checked>
+				    Answer text here
+				  </label>
+				</div>
+				<div class="radio answer col-md-12">
+				  <label>
+				    <input type="radio" name="q1" value="option3" checked>
+				    Answer text here
+				  </label>
+				</div>
+				<div class="radio answer col-md-12">
+				  <label>
+				    <input type="radio" name="q1" value="option4" checked>
+				    Answer text here
+				  </label>
+				</div>
+			</div>
+
+			<!-- select box question-->
+			<div class="">
+				
+			</div>
+		</div>
+	</div>
+<!-- Scripts go here to increase speed load time -->
+<script type="javascript" type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+<script type="javascript" type='text/javascript' src='bootstrap.min.js'></script>
+</body>
+</html>
