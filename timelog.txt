@@ -1,6 +1,7 @@
 Time Log 
 Date		Time		Description
-Dec. 24, 2013	14:00-16:00	Problem analysis. Analyzing reference designs. Discussion of what type of questions
-				will be put in the questionnaire, and discussion for future types, like trigger questions.
-				Additional work included starting Git and completing radio questions (HTML)
-Dec. 25, 2013	13:00-
+12-24-13	14:00-16:00	Problem analysis. Analyzing reference designs. Discussion of
+						what type of questions will be put in the questionnaire, and discussion for future types, like trigger questions.Additional work included starting Git and completing radio questions (HTML).
+						
+12-15-2013	13:00-14:36	Checkbox, textarea, and diagram w/ checkbox/radio completed.
+						Discovered canvas is unsupported by firefox. Will have to develop custom canvas/find canvas plugin.
