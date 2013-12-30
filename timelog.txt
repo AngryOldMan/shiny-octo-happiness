@@ -3,5 +3,8 @@ Date		Time		Description
 12-24-13	14:00-16:00	Problem analysis. Analyzing reference designs. Discussion of
 						what type of questions will be put in the questionnaire, and discussion for future types, like trigger questions.Additional work included starting Git and completing radio questions (HTML).
 						
-12-15-2013	13:00-14:36	Checkbox, textarea, and diagram w/ checkbox/radio completed.
+12-25-2013	13:00-14:36	Checkbox, textarea, and diagram w/ checkbox/radio completed.
 						Discovered canvas is unsupported by firefox. Will have to develop custom canvas/find canvas plugin.
+12-27-2013	12:00-14:00	Drawable canvas completed.
+12-28-2013	18:25-19:30	Working on trigger questions, and potentially translating questions. Trigger not working.
+12-29-2013	20:00-21:16	Trigger questions working. To get them to validate will be difficult. Form text now can be used to form notes based on results of the survey.

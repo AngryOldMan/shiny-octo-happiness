@@ -3,8 +3,8 @@
 <head>
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="template.css">
 	<link rel="stylesheet" type="text/css" href="my_styles.css">
+	
 
 </head>
 <body>
@@ -46,113 +46,183 @@
 
 
 		<div class="row col-md-8"> 
-			<!-- questions and everything goes here. Remember to change the question number
-			in the <name> attributes -->
+			<form id='eForm' action='#' method='post'>
+				<!-- questions and everything goes here. Remember to change the question number
+				in the <name> attributes -->
 
-			<!-- radio buttons question -->
-			<div class="radio question col-md-12">
-				<h3 class="col-md-12">Radio button questions example (question text here)</h3>
-				<!-- for each answer, put the following div in.
-				Keep the <name> value the same, but change <value> to what the
-				text should say  -->
-				<div class="radio answer col-md-8">
-				  <label>
-				    <input type="radio" name="q1" value="option1" checked>
-				    Answer text here
-				  </label>
-				</div>
+				<!-- radio buttons question -->
+				<div class="radio question col-md-12">
+					<h3 class="col-md-12">Radio button questions example (question text here)</h3>
+					<!-- for each answer, put the following div in.
+					Keep the <name> value the same, but change <value> to what the
+					text should say  -->
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q1" value="option1" checked>
+						Answer text here
+					  </label>
+					</div>
 
-
-				<div class="radio answer col-md-8">
-				  <label>
-				    <input type="radio" name="q1" value="option2" checked>
-				    Answer text here
-				  </label>
-				</div>
-				<div class="radio answer col-md-8">
-				  <label>
-				    <input type="radio" name="q1" value="option3" checked>
-				    Answer text here
-				  </label>
-				</div>
-				<div class="radio answer col-md-8">
-				  <label>
-				    <input type="radio" name="q1" value="option4" checked>
-				    Answer text here
-				  </label>
-				</div>
-			</div>
-
-			<!-- checkbox question-->
-			<div class="checkbox question col-md-12">
-				<h3 class="col-md-12">Checkbox questions example (question text here)</h3>
-				<!-- for each answer, put the following div in.
-				Keep the <name> value the same, but change <value> to what the
-				text should say  -->
-				<div class="checkbox answer col-md-8">
-				  <label>
-				    <input type="checkbox" name="q1" value="option1">
-				    Answer text here
-				  </label>
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q1" value="option2">
+						Answer text here
+					  </label>
+					</div>
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q1" value="option3">
+						Answer text here
+					  </label>
+					</div>
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q1" value="option4">
+						Answer text here
+					  </label>
+					</div>
 				</div>
 
+				<!-- checkbox question-->
+				<div class="checkbox question col-md-12">
+					<h3 class="col-md-12">Checkbox questions example (question text here)</h3>
+					<!-- for each answer, put the following div in.
+					Keep the <name> value the same, but change <value> to what the
+					text should say  -->
+					<div class="checkbox answer col-md-8">
+					  <label>
+						<input type="checkbox" name="q2" value="option1" checked>
+						Answer text here
+					  </label>
+					</div>
 
-				<div class="checkbox answer col-md-8">
-				  <label>
-				    <input type="checkbox" name="q1" value="option2">
-				    Answer text here
-				  </label>
-				</div>
-				<div class="checkbox answer col-md-8">
-				  <label>
-				    <input type="checkbox" name="q1" value="option3">
-				    Answer text here
-				  </label>
-				</div>
-				<div class="checkbox answer col-md-8">
-				  <label>
-				    <input type="checkbox" name="q1" value="option4">
-				    Answer text here
-				  </label>
-				</div>
-			</div>
 
-			<!-- text area question (written) -->
-			<div class="textarea question col-md-12">
-				<h3 class="col-md-12">Textarea question example</h3>
-				<div class="textarea col-md-8">
-					<textarea class="form-control" rows="4" name="q1"></textarea>
+					<div class="checkbox answer col-md-8">
+					  <label>
+						<input type="checkbox" name="q2" value="option2">
+						Answer text here
+					  </label>
+					</div>
+					<div class="checkbox answer col-md-8">
+					  <label>
+						<input type="checkbox" name="q2" value="option3">
+						Answer text here
+					  </label>
+					</div>
+					<div class="checkbox answer col-md-8">
+					  <label>
+						<input type="checkbox" name="q2" value="option4">
+						Answer text here
+					  </label>
+					</div>
 				</div>
-			</div>
 
-			<!-- diagram question -->
-			<div class="diagram question col-md-12">
-				<h3 class="col-md-12">
-					Diagram w/ radio buttons examples
-				</h3>
-				<div class="diagram col-md-8">
-					<figure class="diagram">
-						<img src="diagram.png" width="100%" alt="link to diagram here" title="diagram description here">
-						<input type="checkbox" name="q1" value="option1" style="left:150px; top:350px;">
-						<input type="checkbox" name="q1" value="option2" style="left:275px; top:350px;">
-						<input type="checkbox" name="q1" value="option3" style="left:50px; top:250px;">
-						<input type="checkbox" name="q1" value="option4" style="left:350px; top:250px;">
-					</figure>
+				<!-- text area question (written) -->
+				<div class="textarea question col-md-12">
+					<h3 class="col-md-12">Textarea question example</h3>
+					<div class="textarea col-md-8">
+						<textarea class="form-control" rows="4" name="q3" required></textarea>
+					</div>
 				</div>
-			</div>
 
-			<!-- drawable diagrams (should be custom canvas plugin) (to be saved on submit and added to the report) -->
-			<div class="drawable question col-md-12">
-				<h3 class="col-md-12">Drawable question example</h3>
-				<!-- the javascript that makes this drawable is located at the bottom of the page -->
-				<div class="drawable col-md-8">
-					<canvas class='q1'>
-					</canvas>
-					<img class='q1'src="body.png" hidden>
+				<!-- diagram question -->
+				<div class="diagram question col-md-12">
+					<h3 class="col-md-12">
+						Diagram w/ radio buttons examples
+					</h3>
+					<div class="diagram col-md-8">
+						<figure class="diagram">
+							<img src="diagram.png" width="100%" alt="link to diagram here" title="diagram description here">
+							<input type="checkbox" name="q4" value="option1" style="left:175px; top:450px;" checked>
+							<input type="checkbox" name="q4" value="option2" style="left:300px; top:450px;">
+							<input type="checkbox" name="q4" value="option3" style="left:100px; top:350px;">
+							<input type="checkbox" name="q4" value="option4" style="left:400px; top:350px;">
+						</figure>
+					</div>
 				</div>
-			</div>
 
-			<a id="bottom"></a>
+				<!-- drawable diagrams (should be custom canvas plugin) (to be saved on submit and added to the report) -->
+				<div class="drawable question col-md-12">
+					<h3 class="col-md-12">Drawable question example</h3>
+					<!-- the javascript that makes this drawable is located at the bottom of the page -->
+					<div class="drawable canvas col-md-8">
+						<img class='q5'src="body.jpg" width='100%'>
+					</div>
+				</div>
+				
+				<!-- trigger questions here (should be used with a radio/checkbox combination) ->
+				<div class="radio trigger question col-md-12">
+					<h3 class="col-md-12">Trigger button questions example (question text here)</h3>
+					<!-- for each answer, put the following div in.
+					Keep the <name> value the same, but change <value> to what the
+					text should say  ->
+					<div class="radio answer col-md-8"> <!-- if a trigger question is picked
+					then the next set of questions should be added to the survey. If unchecked, it should be
+					removed. ->
+					  <label>
+						<input class="trigger" id="1-1" type="radio" name="q2" value="option1">
+						<!-- the id (1-1) in this case, should change, where 1 refers to the question
+						number and the second 1 refers to the first answer.->					
+						Answer text here
+					  </label>
+					</div>
+
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q2" value="option2" checked>
+						Answer text here
+					  </label>
+					</div>
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q2" value="option3">
+						Answer text here
+					  </label>
+					</div>
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q2" value="option4">
+						Answer text here
+					  </label>
+					</div>
+				</div>
+				
+				<div class="radio question 1-1 col-md-12" style='display:none;'> <!-- the hidden part indicates that this question
+				is only visible if a particular trigger answer is selected. It will hide if its unchecked.
+				The class indicates which question will be shown->
+					<h3 class="col-md-12">Radio button questions example (question text here)</h3>
+					<!-- for each answer, put the following div in.
+					Keep the <name> value the same, but change <value> to what the
+					text should say  ->
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q1" value="option1" checked>
+						Answer text here
+					  </label>
+					</div>
+
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q1" value="option2" checked>
+						Answer text here
+					  </label>
+					</div>
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q1" value="option3" checked>
+						Answer text here
+					  </label>
+					</div>
+					<div class="radio answer col-md-8">
+					  <label>
+						<input type="radio" name="q1" value="option4" checked>
+						Answer text here
+					  </label>
+					</div>
+				</div>-->
+				
+				<button class='btn btn-large' type='submit' id='submit'>Submit</button><a id="bottom"></a>
+			</form>
 		</div>
 	</div>
 <!-- Scripts go here to increase speed load time -->
@@ -162,7 +232,7 @@
 	$(document).ready(function(){
 		// this executes when the document has loaded its elements
 	 	
-	 	var diagrams = $('div.row > div.diagram');
+	 	var diagrams = $('form > div.diagram');
 	 	diagrams.each(function(){
 	 		// adjusts height of figure to fix how it looks
 	 		var height = $(this).find('img').height();
@@ -170,17 +240,75 @@
 	 	});
 
 	 	// modify so that the canvas is a custom div
-	 	var canvas = $('canvas');
+	 	var canvas = $('.canvas');
 	 	canvas.each(function() {
 	 		// adjusts height of canvas and gives it its background image
-	 		var classes = $(this).attr('class');
-	 		$(this).height($(this).width());
-	 		
-	 		// needs to be fixed. Why does the canvas not work??
-	 		var c = $(this).getContext("2d");
-	 		c.drawImage(img, 0,0);
-	 	})
+	 		$(this).height($(this).find('img').height());
+	 		var coloring = false;
+	 		$(this).mousemove(function(e){
+	 			if(coloring){
+	 				var position = $(this).offset();
+	 				var left = e.pageX - position.left;
+	 				var top = e.pageY - position.top;
+	 				$(this).append("<div class='dot' style='position:absolute;left:" + left + "px;top:" + top + "px;background-color:black;width:5px;height:5px;'></div>");
+	 				return false;
+	 			}
 
+	 		});
+	 		$(this).mousedown(function(e){
+	 			coloring = true;
+	 			return false;
+	 		});
+	 		$(this).mouseup(function(e){
+	 			coloring = false;
+	 			return false;
+	 		});
+	 		$(this).mouseleave(function(e){
+	 			coloring = false;
+	 		});
+	 	});
+		
+		// trigger questions
+		$('input.trigger').each(function(){
+		
+			var name = $(this).attr('name');
+			$("input[name='" + name + "']").change(function(){
+				$("input[name='" + name + "']").each(function(){
+					if($(this).attr('class') == 'trigger'){
+						var id = $(this).attr('id');
+						var question = $('div.' + id);
+						if($(this).is(':checked')){
+							if(question.css('display') == 'none'){
+								question.slideDown();
+							}
+						}
+						else{
+							if(question.css('display') != 'none'){
+								question.slideUp();
+							}
+						}
+					}
+				});
+			});
+		});
+	
+		// submit the form and create the note
+		$('#submit').click(function(){
+			pieces = 	['This is the first answer: ',
+						'. This is the second answer: ',
+						'. Notice that (',
+						') answers are between ',
+						' elements of the array.'];
+			var q = $('#eForm').serializeArray();
+			var string = '';
+			for(var i = 0; i < q.length; i++){
+				// add them up
+				string += pieces[i] + q[i].value;
+			}
+			string += pieces[pieces.length-1];
+			alert(string);
+			return false
+		});
 	});
 
 
